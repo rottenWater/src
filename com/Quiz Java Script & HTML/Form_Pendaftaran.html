@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+</head>
+
+<body>
+
+    <h1 style="color: orange; font-size: 20pt;">Buat Account Baru</h1>
+    <hr>
+
+    <div>
+        <p>For international applicants, please contact our <u>International Office</u> regarding application
+            procedure.
+            This registration form is meant for Indonesian citizen only. Harap menggunakan account lama Anda
+            jika Anda
+            telah membuat pendaftaran sebelumnya.
+        </p>
+    </div>
+
+    <h1 style="color: orange; font-size: 18pt;">Login</h1>
+    <hr>
+
+    <form method="post">
+
+        <table cellspacing="2" cellpadding="2">
+
+            <tr>
+                <td align="left"></td>
+                <td>
+                    <label id="valUserName" style="color: red; font-size: 12; display: none;">
+                        Field ini Harus Diisi
+                    </label>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="left">Username</td>
+                <td>
+                    <input type="text" id="userName">
+                </td>
+            </tr>
+
+            <tr>
+                <td align="left"></td>
+                <td>
+                    <label style="color: grey; font-size: x-small;">
+                        Username yang Anda inginkan (hanya dapat terdiri dari huruf, angka, dan_). Username tidak boleh
+                        mengandung spasi.
+                    </label>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td align="left"></td>
+                <td>
+                    <label id="valPassword" style="color: red; font-size: 12; display: none;">Field ini Harus
+                        Diisi</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="left">Password</td>
+                <td>
+                    <input type="password" id="password">
+                </td>
+            </tr>
+            <tr>
+                <td align="left"></td>
+                <td>
+                    <label style="color: grey; font-size: x-small;">
+                        Masukkan password. Password minimal terdiri dari 6 karakter dan case sensitive (A beda dengana)
+                    </label>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <label id="valUlangiPassword" style="color: red; font-size: 12; display: none;">Field ini Harus
+                        Diisi</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="left">Ulangi Password</td>
+                <td>
+                    <input type="password" id="ulangiPassword">
+                </td>
+            </tr>
+
+            <br>
+
+        </table>
+
+        <h1 style="color: orange; font-size: 18pt;">Identitas</h1>
+        <hr>
+
+        <table cellspacing="2" cellpadding="2">
+
+            <tr>
+                <td></td>
+
+                <td>
+                    <label id="valNamaIdentitas" style="color: red; font-size: 12pt; display: none;">
+                        Nama sesuai identitas Harus Diisi </label>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="left">Nama sesuai identitas</td>
+                <td>
+                    <input type="text" id="namaIdentitas">
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <label style="color: grey; font-size: x-small;">
+                        Nama sesuai yang tertulis di kartu identitas, tanpa gelar akademis sertifikasi
+                        <br>
+                        Nama diawali huruf besar di awal dan setelah spasi, contoh salah: abc def. ABC DEF.
+                    </label>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+
+                <td>
+                    <label id="valNamaIjazah" style="color: red; font-size: 12pt; display: none;">
+                        Nama sesuai ijazah Harus Diisi
+                    </label>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="left">Nama sesuai ijazah</td>
+                <td>
+                    <input type="text" id="namaIjazah">
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <label style="color: grey; font-size: x-small;">
+                        Nama sesuai yang tertulis di kartu identitas, tanpa gelar akademis sertifikasi
+                        <br>
+                        Nama diawali huruf besar di awal dan setelah spasi, contoh salah: abc def. ABC DEF.
+                    </label>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+
+                <td>
+                    <label id="valJenisIdentitas" style="color: red; font-size: 12pt; display: none;">
+                        Anda belum memilih identitas
+                    </label>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="left">Jenis Identitas</td>
+                <td>
+                    <select name="jenisidentitas" id="jenisIdentitas">
+                        <optgroup label="--PILIH--">
+                            <option value="">--PILIH--</option>
+                            <option value="KTP">KTP</option>
+                            <option value="Passpor">Passpor</option>
+                            <option value="SIM">SIM</option>
+                            <option value="Surat Keterangan Domisili">Surat Keterangan Domisili</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <label style="color: grey; font-size: x-small;">
+                        Pilih jenis identitas Anda. Identitas harus dibawa ketika ujian daftar ulang
+                    </label>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+
+                <td>
+                    <label id="valNomorIdentitas" style="color: red; font-size: 12pt; display: none;">
+                        Field ini Harus Diisi
+                    </label>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="left">Nomor Identitas</td>
+                <td>
+                    <input type="text" id="nomorIdentitas">
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+
+                <td>
+                    <label id="valWargaNegara" style="color: red; font-size: 12pt; display: none;">
+                        Field ini Harus Diisi
+                    </label>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="left">Kewarganegaraan</td>
+                <td>
+                    <select name="warganegara" id="wargaNegara">
+                        <optgroup label="--PILIH--">
+                            <option value="">--PILIH--</option>
+                            <option value="Indonesia">Indonesia</option>
+                            <option value="Asing">Asing</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="button" onclick="validate1()" value="Login">
+
+                </td>
+            </tr>
+
+        </table>
+
+
+
+    </form>
+
+    <script src="../javaScript/validasiForm_Pendaftaran.js">
+
+    </script>
+
+</body>
+
+</html>
